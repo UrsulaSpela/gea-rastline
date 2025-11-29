@@ -166,7 +166,7 @@ function renderCart() {
     closeBtn.addEventListener("click", () => {
       modal.classList.remove("active");
       overlay.classList.remove("active");
-      navigation.navigate("./index.html");
+      window.location.href = "index.html";
     });
   });
 }
