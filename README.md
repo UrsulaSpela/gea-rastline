@@ -1,0 +1,2 @@
+# gea-rastline
+Aplikativna naloga 
