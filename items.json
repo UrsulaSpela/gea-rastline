@@ -1,0 +1,74 @@
+{
+    "sobneRastline": [
+      {
+        "id": 1,
+        "name": "Monstera Deliciosa",
+        "desc": "Elegantna sobna rastlina z velikimi listi",
+        "price": 24.99,
+        "image": "slike/monstera.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Pilea",
+        "desc": "Sobna rastlina vesela jutranjega sonca",
+        "price": 14.99,
+        "image": "slike/pilea1.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Spatifil",
+        "desc": "Priljubljena in elegantna rastlina",
+        "price": 29.99,
+        "image": "slike/spatifil.jpg"
+      }
+    ],
+  
+    "cvetlicniAranzmaji": [
+      {
+        "id": 4,
+        "name": "Pomladni šopek",
+        "desc": "Barvit aranžma",
+        "price": 39.99,
+        "image": "slike/pomlad.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Poletni šopek",
+        "desc": "Eksplozija barv in veselja",
+        "price": 39.99,
+        "image": "slike/poletje.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Jesenski šopek",
+        "desc": "Eleganten in topel",
+        "price": 39.99,
+        "image": "slike/jesen.jpg"
+      }
+    ],
+  
+    "cvetlicniLonci": [
+      {
+        "id": 7,
+        "name": "Pravokotni lonec",
+        "desc": "Ročno izdelan, primeren za zunanjo uporabo",
+        "price": 13.80,
+        "image": "slike/lonec.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Lonček za sukulente",
+        "desc": "Ročno izdelan, primeren za manjše rastline",
+        "price": 3.99,
+        "image": "slike/lonec1.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Keramični lonec",
+        "desc": "Keramični lonec, različnih velikosti",
+        "price": 6.99,
+        "image": "slike/lonec2.jpg"
+      }
+    ]
+  }
+  

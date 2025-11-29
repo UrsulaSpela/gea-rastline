@@ -1,0 +1,656 @@
+:root {
+  --card-background: #f8f9fa;
+  --background-green: #ecf4d3;
+  --main-green: #88ad35;
+  --secondary-green: #698927;
+}
+
+/* ----------------------------------------------------------------- */
+/* Generalno na vseh straneh CSS */
+/* ----------------------------------------------------------------- */
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+main h2 {
+  color: var(--main-green);
+  font-weight: 700;
+}
+
+main button {
+  background-color: var(--main-green);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+  main button:hover {
+    background-color: var(--secondary-green); 
+  }
+
+header {
+  background-color: #f8f9fa;
+  color: #88ad35;
+  padding: 3rem 0;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+header .btn {
+  background-color: var(--main-green);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+  header .btn:hover {
+    background-color: var(--secondary-green);
+  }
+
+header {
+  background-color: #f8f9fa;
+  color: var(--main-green);
+  padding: 3rem 0;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #CCC;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+/* Začetek nav kode */
+.nav-design {
+  background-color: var(--background-green);
+}
+
+.nav-design .container a i,
+.nav-design .container a span,
+.nav-design .container .nav-links ul li a{
+  color: var(--secondary-green);
+  font-weight: 600;
+}
+
+  .nav-design .container .nav-links ul li a:hover {
+    color: var(--main-green);
+  }
+
+/* Začetek footer kode */
+.footer-design {
+  background-color: var(--background-green);
+  padding: 30px 0;
+}
+
+/* Zgornja vrsta */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+/* Logo + ime */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo,
+.footer-brand {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--secondary-green);
+}
+
+/* Footer linki */
+.footer-center {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-center a {
+  text-decoration: none;
+  color: var(--secondary-green);
+  font-weight: 500;
+}
+
+  .footer-center a:hover {
+    color: var(--main-green);
+  }
+
+/* Ikone na desni */
+.footer-right a {
+  font-size: 1.3rem;
+  color: var(--secondary-green);
+  margin-left: 12px;
+}
+
+  .footer-right a:hover {
+    color: var(--main-green);
+  }
+
+/* Vodoravna črta */
+footer hr {
+  border: none;
+  border-top: 1px solid #b7c89f;
+  margin: 10px 0 20px 0;
+}
+
+/* Spodnji copyright besedilo */
+.footer-bottom {
+  text-align: center;
+  color: var(--secondary-green);
+  font-size: 0.95rem;
+}
+
+/* Odzivnost na manjše ekrane */
+@media (max-width: 767px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 312px) {
+  footer .container {
+    padding: 0;
+  }
+
+  .footer-center a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 285px) {
+  .footer-center a {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+.left-side-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.right-side-image-text {
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .right-side-image-text {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+/* Index.html CSS */
+/* ----------------------------------------------------------------- */
+.hero.home {
+  background: url('slike/home-hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.benefits-section {
+  background: var(--background-green);
+}
+
+.benefit-box {
+  padding: 20px;
+}
+
+.benefit-box .icon-circle {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: var(--main-green); /* svetlo-zelena kot na sliki */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 28px;
+}
+
+.benefit-box h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.popular-products {
+  background: white;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px #00000015;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 768px) {
+  .benefit-box {
+    padding: 10px;
+  }
+  .product-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+/* About.html CSS */
+/* ----------------------------------------------------------------- */
+.hero.about {
+  background: url('slike/aboutus-hero.png') no-repeat center center/cover;
+  height: 50vh;
+}
+
+/* ----------------------------------------------------------------- */
+/* Contact.html CSS */
+/* ----------------------------------------------------------------- */
+.hero.contact {
+  background: url('slike/contact-hero.jpg') no-repeat center center/cover;
+  height: 50vh;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+/* Ikone v krogih */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--background-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-right: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-item h5 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.submit-btn {
+  background-color: var(--main-green);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-size: 18px;
+}
+
+  .submit-btn:hover {
+    background-color: var(--secondary-green);
+    color: white;
+  }
+
+.contact-section form div input,
+.contact-section form div textarea {
+  box-shadow: none;
+}
+
+  .contact-section form div input:focus,
+  .contact-section form div textarea:focus {
+    box-shadow: none;
+    border: 1px solid var(--main-green);
+  }
+
+  .contact-section form div input:hover,
+  .contact-section form div textarea:hover {
+    border: 1px solid var(--main-green);
+  }
+
+.contact-section form div label {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    padding-right: 0;
+  }
+
+  .contact-item {
+    gap: 15px;
+  }
+
+  .icon-circle {
+    width: 55px;
+    height: 55x;
+    font-size: 22px;
+  }
+
+  .contact-item h5 {
+    font-size: 18px;
+  }
+
+  .contact-item p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-item {
+    align-items: flex-start;
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 412px) {
+  .icon-circle {
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+  }
+
+  .contact-item h5 {
+    font-size: 16px;
+  }
+
+  .contact-item p {
+    font-size: 13px;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+/* Service.html CSS */
+/* ----------------------------------------------------------------- */
+.hero.service {
+  background: url('slike/service-hero.png') no-repeat center center/cover;
+  height: 50vh;
+}
+
+.image-description-card {
+  padding: 30px;
+}
+
+  .image-description-card:hover {
+    background-color: var(--background-green);
+    border-radius: 15px;
+  }
+
+.image-description-card img {
+  height: 230px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.25);
+}
+
+.image-description-card h3 {
+  color: var(--main-green);
+}
+
+@media (max-width: 324px) {
+  .image-description-card img {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+/* Shop.html CSS */
+/* ----------------------------------------------------------------- */
+.hero.shop {
+  background: url('slike/shop-hero.png') no-repeat center center/cover;
+  height: 50vh;
+}
+
+.filter-section {
+  text-align: center;
+  background-color: var(--background-green);
+}
+
+.filter-section h2 {
+  color: var(--main-green);
+  font-weight: 700;
+}
+
+.filter-section a {
+  text-decoration: none;
+}
+
+.filter-section a h3 {
+  color: #fff;
+  background-color: var(--main-green);
+  padding: 5px 15px;
+  margin: 0px 15px;
+  border-radius: 25px;
+}
+
+  .filter-section a h3:hover {
+    background-color: var(--secondary-green);
+  }
+
+.filter-section hr {
+  border: none;
+  border-top: 2px solid #b7c89f;
+  margin: 10px 0 20px 0;
+}
+
+@media (max-width: 767px) {
+  .filter-section a h3 {
+    margin: 5px 0px;
+  }
+}
+
+.items-grid {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 900px) {
+  .items-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .items-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.shop-item-card {
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+  .shop-item-card:hover {
+    border-color: var(--main-green);
+  }
+
+.shop-item-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.shop-item-card h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.shop-item-card p {
+  margin: 0;
+  padding: 5px 0px;
+  color: #555;
+}
+
+.shop-item-card .price {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.shop-item-card button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: var(--main-green);
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.shop-item-card button:hover {
+  background: var(--secondary-green);
+}
+
+/* ----------------------------------------------------------------- */
+/* Basket.html CSS */
+/* ----------------------------------------------------------------- */
+#mainBasket {
+  height: 69%;
+}
+
+.basket-header {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.cart-card {
+  height: 100%;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cart-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .cart-price {
+    text-align: center !important;
+  }
+}
+
+#emptyCart{
+  text-align: center;
+}
+
+#mainBasket{
+  height: auto;
+  margin-bottom: 150px;
+}
+
+#modal{
+  padding: 25px;
+  width: 350px;
+  height: 150px;
+  border: 1.5px solid var(--main-green);
+  border-radius: 10px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index:100;
+  background-color: white;
+}
+
+#modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+  z-index: 10;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

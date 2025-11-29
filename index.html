@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastline.si - Domov</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Navigacijska vrstica -->
+    <nav class="navbar navbar-expand-lg shadow-sm nav-design sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <i class="bi bi-flower1 footer-logo"></i>
+                <span class="store-name">Rastline.si</span>
+            </a>   
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Linki -->
+            <div class="collapse navbar-collapse nav-links" id="#navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Trgovina</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Storitev</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">O nas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="basket.html" id="cart">Košarica</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <!-- Vrh strani -->
+    <header class="hero home d-flex align-items-center text-center text-light">
+        <div class="container">
+            <h1>PRINESITE NARAVO V SVOJ DOM</h1>
+            <p>Najlepše sobne rastline in cvetlični aranžmaji</p>
+            <a href="shop.html" class="btn btn-lg">Nakupuj zdaj</a>
+        </div>
+    </header>
+
+    <!-- Glavni del strani -->
+    <main class="py-5 text-center">
+
+        <!-- Prvi del vsebine -->
+        <div class="container mb-5">
+            <h2>Zakaj smo mi najboljša izbira</h2>
+
+            <p class="lead mb-5">
+                Ker verjamemo, da rastline prinašajo mir, svežino in lepoto v vsak prostor. <br>
+                Pri nas skrbno izbiramo le najbolj kakovostne rastline, ki prinesejo harmonijo
+                v vaš dom ali pisarno.
+            </p>
+
+            <hr>
+        </div>
+
+        <!-- Kaj ponujamo -->
+        <section class="benefits-section py-5">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="benefit-box">
+                            <div class="icon-circle"><i class="bi bi-credit-card"></i></div>
+                            <h5>Varen spletni nakup</h5>
+                            <p>Brez kraj podatkov</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="benefit-box">
+                            <div class="icon-circle"><i class="bi bi-truck"></i></div>
+                            <h5>Zastonj dostava</h5>
+                            <p>Nad 50€</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="benefit-box">
+                            <div class="icon-circle"><i class="bi bi-box-seam"></i></div>
+                            <h5>Skrbno dostavljeno</h5>
+                            <p>Brez problemov</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="benefit-box">
+                            <div class="icon-circle"><i class="bi bi-heart"></i></div>
+                            <h5>Odlična storitev</h5>
+                            <p>Pribljubljeni med strankami</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Najbolj priljubljena izdelka -->
+        <section class="popular-products py-5">
+            <div class="container">
+                <h3 class="text-center mb-4">Najbolj priljubljeni izdelki</h3>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="product-card">
+                            <img src="slike/monstera.jpg" alt="Izdelek 1">
+                            <h5>Monstera Deliciosa</h5>
+                            <p>Elegantna sobna rastlina z velikimi listi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="product-card">
+                            <img src="slike/spatifil.jpg" alt="Izdelek 2">
+                            <h5>Spatifil</h5>
+                            <p>Priljubljena in elegantna rastlina</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+      
+    <!-- Spodnji del strani -->
+    <footer class="footer-design">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Leva -->
+                <div class="footer-left">
+                    <i class="bi bi-flower1 footer-logo"></i>
+                    <span class="footer-brand">Rastline.si</span>
+                </div>
+
+                <!-- Sredina -->
+                <div class="footer-center">
+                    <a href="index.html">Domov</a>
+                    <a href="shop.html">Trgovina</a>
+                    <a href="about.html">O nas</a>
+                    <a href="contact.html">Kontakt</a>
+                </div>
+
+                <!-- Desno -->
+                <div class="footer-right">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                &copy; 2025 Rastline.si
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
